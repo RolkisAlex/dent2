@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_variables.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/content.scss"
+	],
+	"sourcesContent": [
+		"@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');\r\n\r\n*{\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody{\r\n  font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.container{\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n}\r\n\r\n@import \"variables\";\r\n\r\n@import \"layouts/header\";\r\n\r\n@import \"layouts/content\";",
+		"$sky-blue: #008be9;\r\n$red: #ff595e;\r\n$yellow: #ffca3a;\r\n$green: #8ac926;\r\n$purple: #6a4c93;",
+		"header{\r\n  width: 100%;\r\n  background-color: rgba(225, 225, 225, 0.5);\r\n  position: fixed;\r\n  top: 0;\r\n  .top-header{\r\n    text-align: right;\r\n    padding: 10px 0;\r\n    i{\r\n      margin-right: 10px;\r\n      font-size: 1.5em;\r\n      &:last-of-type{\r\n        margin-right: 0;\r\n      }\r\n    }\r\n  }\r\n\r\n  .bottom-header{\r\n    display: flex;\r\n    align-items: center;\r\n    margin-bottom: 15px;\r\n    .logo{\r\n      width: 30%;\r\n      img{\r\n        height: 40px;\r\n      }\r\n    }\r\n    .menu{\r\n      width: 70%;\r\n      > a{\r\n        padding: 10px 20px;\r\n        text-decoration: none;\r\n        font-size: 19px;\r\n        font-weight: 500;\r\n        color: #000000;\r\n        &:hover{\r\n          color: $red;\r\n        }\r\n      }\r\n\r\n      .registration-button{\r\n        border: 0;\r\n        padding: 8px 30px;\r\n        background-color: $green;\r\n        border-radius: 16px;\r\n        font-size: 16px;\r\n        color: #ffffff;\r\n        margin-left: 15px;\r\n        &:hover{\r\n          background-color: $red;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+		".slider{\r\n  background-image: url(\"../images/bigstock-Young-man-on-dental-check-up-107031422.jpg\");\r\n  background-attachment: scroll;\r\n  background-repeat: no-repeat;\r\n  background-position: top;\r\n}"
+	],
+	"mappings": "AAAA,OAAO,CAAC,qEAAI;;AAEZ,AAAA,CAAC,CAAA;EACC,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;EACV,UAAU,EAAE,UAAW;CACxB;;;AAED,AAAA,IAAI,CAAA;EACF,WAAW,EAAE,oBAAqB;CACnC;;;AAED,AAAA,UAAU,CAAA;EACR,SAAS,EAAE,MAAO;EAClB,MAAM,EAAE,MAAO;CAChB;;;AEfD,AAAA,MAAM,CAAA;EACJ,KAAK,EAAE,IAAK;EACZ,gBAAgB,EAAE,wBAAI;EACtB,QAAQ,EAAE,KAAM;EAChB,GAAG,EAAE,CAAE;CAkDR;;;AAtDD,AAKE,MALI,CAKJ,WAAW,CAAA;EACT,UAAU,EAAE,KAAM;EAClB,OAAO,EAAE,MAAO;CAQjB;;;AAfH,AAQI,MARE,CAKJ,WAAW,CAGT,CAAC,CAAA;EACC,YAAY,EAAE,IAAK;EACnB,SAAS,EAAE,KAAM;CAIlB;;;AAdL,AAQI,MARE,CAKJ,WAAW,CAGT,CAAC,AAGE,aAAa,CAAA;EACZ,YAAY,EAAE,CAAE;CACjB;;;AAbP,AAiBE,MAjBI,CAiBJ,cAAc,CAAA;EACZ,OAAO,EAAE,IAAK;EACd,WAAW,EAAE,MAAO;EACpB,aAAa,EAAE,IAAK;CAiCrB;;;AArDH,AAqBI,MArBE,CAiBJ,cAAc,CAIZ,KAAK,CAAA;EACH,KAAK,EAAE,GAAI;CAIZ;;;AA1BL,AAuBM,MAvBA,CAiBJ,cAAc,CAIZ,KAAK,CAEH,GAAG,CAAA;EACD,MAAM,EAAE,IAAK;CACd;;;AAzBP,AA2BI,MA3BE,CAiBJ,cAAc,CAUZ,KAAK,CAAA;EACH,KAAK,EAAE,GAAI;CAwBZ;;;AApDL,AA6BQ,MA7BF,CAiBJ,cAAc,CAUZ,KAAK,GAED,CAAC,CAAA;EACD,OAAO,EAAE,SAAU;EACnB,eAAe,EAAE,IAAK;EACtB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,GAAI;EACjB,KAAK,EAAE,OAAQ;CAIhB;;;AAtCP,AA6BQ,MA7BF,CAiBJ,cAAc,CAUZ,KAAK,GAED,CAAC,AAMA,MAAM,CAAA;EACL,KAAK,EDnCT,OAAO;CCoCJ;;;AArCT,AAwCM,MAxCA,CAiBJ,cAAc,CAUZ,KAAK,CAaH,oBAAoB,CAAA;EAClB,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,QAAS;EAClB,gBAAgB,EDxChB,OAAO;ECyCP,aAAa,EAAE,IAAK;EACpB,SAAS,EAAE,IAAK;EAChB,KAAK,EAAE,OAAQ;EACf,WAAW,EAAE,IAAK;CAInB;;;AAnDP,AAwCM,MAxCA,CAiBJ,cAAc,CAUZ,KAAK,CAaH,oBAAoB,AAQjB,MAAM,CAAA;EACL,gBAAgB,EDhDpB,OAAO;CCiDJ;;;AClDT,AAAA,OAAO,CAAA;EACL,gBAAgB,EAAE,oEAAG;EACrB,qBAAqB,EAAE,MAAO;EAC9B,iBAAiB,EAAE,SAAU;EAC7B,mBAAmB,EAAE,GAAI;CAC1B",
+	"names": []
+}
