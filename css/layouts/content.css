@@ -1,0 +1,9 @@
+/* line 1, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider {
+  background-image: url("../images/bigstock-Young-man-on-dental-check-up-107031422.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/*# sourceMappingURL=../../css/layouts/content.map */
