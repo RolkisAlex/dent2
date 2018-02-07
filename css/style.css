@@ -1,70 +1,73 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
-/* line 3, D:/bta_projektai/danticija/scss/style.scss */
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+/* line 4, D:/BTA projektai/danticija2/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* line 9, D:/bta_projektai/danticija/scss/style.scss */
+/* line 10, D:/BTA projektai/danticija2/scss/style.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 13, D:/bta_projektai/danticija/scss/style.scss */
+/* line 14, D:/BTA projektai/danticija2/scss/style.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
-/* line 1, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 1, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header {
   width: 100%;
   background-color: rgba(225, 225, 225, 0.5);
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
-/* line 6, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 7, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .top-header {
   text-align: right;
   padding: 10px 0;
 }
 
-/* line 9, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 10, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .top-header i {
   margin-right: 10px;
   font-size: 1.5em;
 }
 
-/* line 12, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 13, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .top-header i:last-of-type {
   margin-right: 0;
 }
 
-/* line 18, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 19, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-/* line 22, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 23, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .logo {
   width: 30%;
 }
 
-/* line 24, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 25, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .logo img {
   height: 40px;
 }
 
-/* line 28, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 29, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .menu {
   width: 70%;
 }
 
-/* line 30, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 31, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .menu > a {
   padding: 10px 20px;
   text-decoration: none;
@@ -73,12 +76,12 @@ header .bottom-header .menu > a {
   color: #000000;
 }
 
-/* line 36, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 37, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .menu > a:hover {
   color: #ff595e;
 }
 
-/* line 41, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 42, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .menu .registration-button {
   border: 0;
   padding: 8px 30px;
@@ -89,17 +92,163 @@ header .bottom-header .menu .registration-button {
   margin-left: 15px;
 }
 
-/* line 49, D:/bta_projektai/danticija/scss/layouts/_header.scss */
+/* line 50, D:/BTA projektai/danticija2/scss/layouts/_header.scss */
 header .bottom-header .menu .registration-button:hover {
   background-color: #ff595e;
 }
 
-/* line 1, D:/bta_projektai/danticija/scss/layouts/content.scss */
+/* line 1, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 10, D:/BTA projektai/danticija2/scss/layouts/content.scss */
 .slider {
-  background-image: url("../images/bigstock-Young-man-on-dental-check-up-107031422.jpg");
+  background-image: url("../images/Danticija web2.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
+  height: 763px;
+}
+
+/* line 17, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock {
+  width: 30%;
+  position: relative;
+  margin-left: 50px;
+  top: 40%;
+}
+
+/* line 22, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock .title {
+  color: #008be9;
+  font-size: 43px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* line 29, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock .short-description {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* line 34, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock .buttons .btn {
+  padding: 10px 25px;
+  background-color: transparent;
+  border-color: #8ac926;
+  border-radius: 16px;
+  border-style: solid;
+  min-width: 150px;
+  font-size: 18px;
+}
+
+/* line 42, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock .buttons .btn:hover {
+  background-color: #ff595e;
+  color: black;
+  border-color: #ff595e;
+}
+
+/* line 49, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock .buttons .registration {
+  background-color: #8ac926;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+/* line 59, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services {
+  margin: 30px 0;
+}
+
+/* line 61, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 67, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list .service-item {
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+
+/* line 73, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list .service-item .icon {
+  text-align: center;
+}
+
+/* line 75, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list .service-item .icon img {
+  height: 117px;
+}
+
+/* line 79, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list .service-item .name {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  min-height: 85px;
+}
+
+/* line 86, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list .service-item .price {
+  font-size: 20px;
+  color: #6a4c93;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Shrikhand', cursive;
+}
+
+/* line 93, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.services .services-list .service-item:hover {
+  -webkit-box-shadow: 1px 1px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 101, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.specialists {
+  background-color: #e5e9eb;
+}
+
+/* line 104, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.carrousel {
+  background: #e5e9eb;
+  text-align: center;
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 112, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.carrousel .logo {
+  display: inline-block;
+  border-radius: 150px;
+  background-color: white;
+}
+
+/* line 116, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.carrousel .logo .radio {
+  align-items: center;
 }
 
 /*# sourceMappingURL=../css/style.map */

@@ -1,9 +1,19 @@
 /* line 1, D:/BTA projektai/danticija2/scss/layouts/content.scss */
 .slider {
-  background-image: url("../images/bigstock-Young-man-on-dental-check-up-107031422.jpg");
+  background-image: url("../images/Danticija web2.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
+  height: 763px;
+}
+
+/* line 8, D:/BTA projektai/danticija2/scss/layouts/content.scss */
+.slider .registration-infoblock {
+  width: 30%;
+  position: relative;
+  margin-left: 50px;
+  top: 50%;
 }
 
 /*# sourceMappingURL=../../css/layouts/content.map */

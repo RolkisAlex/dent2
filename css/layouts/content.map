@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../scss/layouts/content.css",
+	"sources": [
+		"../../scss/layouts/content.scss"
+	],
+	"sourcesContent": [
+		".slider {\n  background-image: url(\"../images/Danticija web2.jpg\");\n  background-attachment: scroll;\n  background-repeat: no-repeat;\n  background-position: top;\n  background-size: cover;\n  height: 763px;\n  .registration-infoblock{\n    width: 30%;\n    position: relative;\n    margin-left: 50px;\n    top: 50%;\n  }\n\n}"
+	],
+	"mappings": ";AAAA,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,mCAAG;EACrB,qBAAqB,EAAE,MAAO;EAC9B,iBAAiB,EAAE,SAAU;EAC7B,mBAAmB,EAAE,GAAI;EACzB,eAAe,EAAE,KAAM;EACvB,MAAM,EAAE,KAAM;CAQf;;;AAdD,AAOE,OAPK,CAOL,uBAAuB,CAAA;EACrB,KAAK,EAAE,GAAI;EACX,QAAQ,EAAE,QAAS;EACnB,WAAW,EAAE,IAAK;EAClB,GAAG,EAAE,GAAI;CACV",
+	"names": []
+}
